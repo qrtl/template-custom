@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 # Copyright 2017 ACSONE SA/NV
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import api, models
+from openerp import api, models
 
 
 class WebEnvironmentRibbonBackend(models.AbstractModel):
@@ -17,10 +18,9 @@ class WebEnvironmentRibbonBackend(models.AbstractModel):
 
     @api.model
     def _prepare_ribbon_name(self):
-        name_tmpl = self.env['ir.config_parameter'].sudo().get_param(
-            'ribbon.name')
+        name_tmpl = self.env['ir.config_parameter'].get_param('ribbon.name')
         vals = self._prepare_ribbon_format_vals()
-        return name_tmpl and name_tmpl.format(**vals) or name_tmpl
+        return name_tmpl.format(**vals)
 
     @api.model
     def get_environment_ribbon(self):
@@ -32,7 +32,7 @@ class WebEnvironmentRibbonBackend(models.AbstractModel):
         name = self._prepare_ribbon_name()
         return {
             'name': name,
-            'color': ir_config_model.sudo().get_param('ribbon.color'),
-            'background_color': ir_config_model.sudo().get_param(
+            'color': ir_config_model.get_param('ribbon.color'),
+            'background_color': ir_config_model.get_param(
                 'ribbon.background.color'),
         }

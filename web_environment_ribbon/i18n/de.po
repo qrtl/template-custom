@@ -4,13 +4,14 @@
 #
 # Translators:
 # Niki Waibel <niki.waibel@gmail.com>, 2017
+# Rudolf Schnapka <rs@techno-flex.de>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-13 16:06+0000\n"
-"PO-Revision-Date: 2017-07-13 16:06+0000\n"
-"Last-Translator: Niki Waibel <niki.waibel@gmail.com>, 2017\n"
+"POT-Creation-Date: 2018-01-03 03:50+0000\n"
+"PO-Revision-Date: 2018-01-03 03:50+0000\n"
+"Last-Translator: Rudolf Schnapka <rs@techno-flex.de>, 2018\n"
 "Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -19,21 +20,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: web_environment_ribbon
-#: model:ir.model.fields,field_description:web_environment_ribbon.field_web_environment_ribbon_backend__display_name
+#: model:ir.model.fields,field_description:web_environment_ribbon.field_web_environment_ribbon_backend_display_name
 msgid "Display Name"
 msgstr "Anzeigename"
 
 #. module: web_environment_ribbon
-#: model:ir.model.fields,field_description:web_environment_ribbon.field_web_environment_ribbon_backend__id
+#: model:ir.model.fields,field_description:web_environment_ribbon.field_web_environment_ribbon_backend_id
 msgid "ID"
 msgstr "ID"
 
 #. module: web_environment_ribbon
-#: model:ir.model.fields,field_description:web_environment_ribbon.field_web_environment_ribbon_backend____last_update
+#: model:ir.model.fields,field_description:web_environment_ribbon.field_web_environment_ribbon_backend___last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Zuletzt geändert am"
 
 #. module: web_environment_ribbon
 #: model:ir.model,name:web_environment_ribbon.model_web_environment_ribbon_backend
 msgid "Web Environment Ribbon Backend"
-msgstr ""
+msgstr "Web-Umfeld Backend-Band"

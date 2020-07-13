@@ -1,4 +1,5 @@
-# Copyright 2015 Therp BV <http://therp.nl>
+# -*- coding: utf-8 -*-
+# © 2015 Therp BV <http://therp.nl>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 import base64
@@ -38,7 +39,7 @@ class TestWebFavicon(TransactionCase):
         # our own icon
         company.write({
             'favicon_backend': base64.b64encode(file_open(
-                'web_favicon/static/description/icon.png', 'rb').read()),
+                'web_favicon/static/description/icon.png').read()),
             'favicon_backend_mimetype': 'image/png',
         })
         data = WebFavicon().icon()

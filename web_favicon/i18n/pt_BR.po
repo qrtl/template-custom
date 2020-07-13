@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-22 08:26+0000\n"
-"PO-Revision-Date: 2018-08-04 13:35+0000\n"
-"Last-Translator: Rodrigo Macedo <rmsolucoeseminformatic4@gmail.com>\n"
+"PO-Revision-Date: 2017-06-22 08:26+0000\n"
+"Last-Translator: Rodrigo de Almeida Sottomaior Macedo "
+"<rmsolucoeseminformatic4@gmail.com>, 2017\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/"
 "teams/23907/pt_BR/)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. module: web_favicon
 #: model:ir.model,name:web_favicon.model_res_company
@@ -26,29 +26,29 @@ msgid "Companies"
 msgstr "Empresas"
 
 #. module: web_favicon
-#: model_terms:ir.ui.view,arch_db:web_favicon.view_company_form
+#: model:ir.ui.view,arch_db:web_favicon.view_company_form
 msgid "Favicon"
 msgstr "Favicon"
 
 #. module: web_favicon
-#: model:ir.model.fields,field_description:web_favicon.field_res_company__favicon_backend
-msgid "Favicon Backend"
-msgstr "Favicon back-end"
+#: model:ir.model.fields,field_description:web_favicon.field_res_company_favicon_backend
+msgid "Favicon backend"
+msgstr "Favicon backend"
 
 #. module: web_favicon
-#: model:ir.model.fields,field_description:web_favicon.field_res_company__favicon_backend_mimetype
-msgid "Favicon Backend Mimetype"
-msgstr "Favicon back-end mimetype"
+#: model:ir.model.fields,field_description:web_favicon.field_res_company_favicon_backend_mimetype
+msgid "Favicon backend mimetype"
+msgstr "Favicon backend mimetype"
 
 #. module: web_favicon
-#: model:ir.model.fields,help:web_favicon.field_res_company__favicon_backend_mimetype
+#: model:ir.model.fields,help:web_favicon.field_res_company_favicon_backend_mimetype
 msgid "Set the mimetype of your file."
 msgstr "Defina o tipo mímico do seu arquivo."
 
 #. module: web_favicon
-#: model_terms:ir.ui.view,arch_db:web_favicon.view_company_form
+#: model:ir.ui.view,arch_db:web_favicon.view_company_form
 msgid "Web Favicon"
-msgstr "Favicon Web"
+msgstr "Web Favicon"
 
 #. module: web_favicon
 #: selection:res.company,favicon_backend_mimetype:0
