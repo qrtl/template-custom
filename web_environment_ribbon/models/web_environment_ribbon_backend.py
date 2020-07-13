@@ -20,7 +20,7 @@ class WebEnvironmentRibbonBackend(models.AbstractModel):
         name_tmpl = self.env['ir.config_parameter'].sudo().get_param(
             'ribbon.name')
         vals = self._prepare_ribbon_format_vals()
-        return name_tmpl and name_tmpl.format(**vals) or name_tmpl
+        return name_tmpl.format(**vals)
 
     @api.model
     def get_environment_ribbon(self):

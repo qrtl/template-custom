@@ -14,28 +14,20 @@ odoo.define('web_environment_ribbon.ribbon', function(require) {
 
     // Code from: http://jsfiddle.net/WK_of_Angmar/xgA5C/
     function validStrColour(strToTest) {
-        if (strToTest === "") {
-            return false;
-        }
-        if (strToTest === "inherit") {
-            return true;
-        }
-        if (strToTest === "transparent") {
-            return true;
-        }
+        if (strToTest === "") { return false; }
+        if (strToTest === "inherit") { return true; }
+        if (strToTest === "transparent") { return true; }
         var image = document.createElement("img");
         image.style.color = "rgb(0, 0, 0)";
         image.style.color = strToTest;
-        if (image.style.color !== "rgb(0, 0, 0)") {
-            return true;
-        }
+        if (image.style.color !== "rgb(0, 0, 0)") { return true; }
         image.style.color = "rgb(255, 255, 255)";
         image.style.color = strToTest;
         return image.style.color !== "rgb(255, 255, 255)";
     }
 
     core.bus.on('web_client_ready', null, function () {
-        var ribbon = $('<div class="test-ribbon hidden"/>');
+        var ribbon = $('<div class="test-ribbon"/>');
         $('body').append(ribbon);
         ribbon.hide();
         // Get ribbon data from backend
@@ -45,7 +37,7 @@ odoo.define('web_environment_ribbon.ribbon', function(require) {
         }).then(
             function (ribbon_data) {
                 // Ribbon name
-                if (ribbon_data.name && ribbon_data.name !== 'False') {
+                if (ribbon_data.name && ribbon_data.name != 'False') {
                     ribbon.html(ribbon_data.name);
                     ribbon.show();
                 }
@@ -60,4 +52,4 @@ odoo.define('web_environment_ribbon.ribbon', function(require) {
             }
         );
     });
-});
+}); // odoo.define
