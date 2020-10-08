@@ -58,7 +58,7 @@ enable=anomalous-backslash-in-string,
     use-vim-comment,
     wrong-tabs-instead-of-spaces,
     xml-syntax-error
-    missing-utf8-coding-comment # In python2.7 the utf8-coding comment is required in headers.
+    missing-utf8-coding-comment
 
 [REPORTS]
 msg-template={path}:{line}: [{msg_id}({symbol}), {obj}] {msg}
